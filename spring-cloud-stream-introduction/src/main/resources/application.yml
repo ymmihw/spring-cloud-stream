@@ -21,8 +21,9 @@ spring:
                 password: guest
                 virtual-host: /
 server:
-  port: 0
+  port: 8080
 management:
-  health:
-    binders:
-      enabled: true
+  endpoints:
+    web:
+      exposure:
+        include: '*'
