@@ -4,8 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.stream.annotation.EnableBinding;
 import org.springframework.cloud.stream.annotation.StreamListener;
+import org.springframework.cloud.stream.annotation.StreamMessageConverter;
 import org.springframework.cloud.stream.messaging.Processor;
 import org.springframework.context.annotation.Bean;
+import org.springframework.messaging.converter.MessageConverter;
 import org.springframework.messaging.handler.annotation.SendTo;
 import com.ymmihw.spring.cloud.stream.introduction.converter.TextPlainMessageConverter;
 import com.ymmihw.spring.cloud.stream.introduction.model.LogMessage;
@@ -18,7 +20,8 @@ public class MyLoggerServiceApplication {
   }
 
   @Bean
-  public TextPlainMessageConverter providesStringMessageConverter() {
+  @StreamMessageConverter
+  public MessageConverter providesStringMessageConverter() {
     return new TextPlainMessageConverter();
   }
 
