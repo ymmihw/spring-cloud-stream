@@ -1,4 +1,4 @@
-package com.ymmihw.spring.cloud.stream.introduction.model;
+package com.ymmihw.spring.cloud.stream.model;
 
 import java.io.Serializable;
 

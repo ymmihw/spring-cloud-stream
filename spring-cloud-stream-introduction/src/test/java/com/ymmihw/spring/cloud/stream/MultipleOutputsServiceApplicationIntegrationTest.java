@@ -1,4 +1,4 @@
-package com.ymmihw.spring.cloud.stream.introduction;
+package com.ymmihw.spring.cloud.stream;
 
 import static org.junit.Assert.assertEquals;
 import org.junit.Test;
@@ -10,7 +10,8 @@ import org.springframework.messaging.support.MessageBuilder;
 import org.springframework.test.annotation.DirtiesContext;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
-import com.ymmihw.spring.cloud.stream.introduction.processor.MyProcessor;
+import com.ymmihw.spring.cloud.stream.MultipleOutputsServiceApplication;
+import com.ymmihw.spring.cloud.stream.processor.MyProcessor;
 
 @RunWith(SpringJUnit4ClassRunner.class)
 @ContextConfiguration(classes = MultipleOutputsServiceApplication.class)

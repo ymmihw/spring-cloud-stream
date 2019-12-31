@@ -1,4 +1,4 @@
-package com.ymmihw.spring.cloud.stream.introduction;
+package com.ymmihw.spring.cloud.stream;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -8,8 +8,8 @@ import org.springframework.cloud.stream.messaging.Processor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.messaging.converter.MessageConverter;
 import org.springframework.messaging.handler.annotation.SendTo;
-import com.ymmihw.spring.cloud.stream.introduction.converter.TextPlainMessageConverter;
-import com.ymmihw.spring.cloud.stream.introduction.model.LogMessage;
+import com.ymmihw.spring.cloud.stream.converter.TextPlainMessageConverter;
+import com.ymmihw.spring.cloud.stream.model.LogMessage;
 
 @SpringBootApplication
 @EnableBinding(Processor.class)

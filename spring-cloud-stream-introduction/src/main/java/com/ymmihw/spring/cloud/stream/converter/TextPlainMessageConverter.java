@@ -1,9 +1,9 @@
-package com.ymmihw.spring.cloud.stream.introduction.converter;
+package com.ymmihw.spring.cloud.stream.converter;
 
 import org.springframework.messaging.Message;
 import org.springframework.messaging.converter.AbstractMessageConverter;
 import org.springframework.util.MimeType;
-import com.ymmihw.spring.cloud.stream.introduction.model.LogMessage;
+import com.ymmihw.spring.cloud.stream.model.LogMessage;
 
 public class TextPlainMessageConverter extends AbstractMessageConverter {
 

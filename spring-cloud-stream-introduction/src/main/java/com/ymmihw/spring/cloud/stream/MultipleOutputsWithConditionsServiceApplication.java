@@ -1,4 +1,4 @@
-package com.ymmihw.spring.cloud.stream.introduction;
+package com.ymmihw.spring.cloud.stream;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
@@ -7,7 +7,7 @@ import org.springframework.cloud.stream.annotation.EnableBinding;
 import org.springframework.cloud.stream.annotation.StreamListener;
 import org.springframework.messaging.Message;
 import org.springframework.messaging.support.MessageBuilder;
-import com.ymmihw.spring.cloud.stream.introduction.processor.MyProcessor;
+import com.ymmihw.spring.cloud.stream.processor.MyProcessor;
 
 @SpringBootApplication
 @EnableBinding(MyProcessor.class)

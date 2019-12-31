@@ -1,4 +1,4 @@
-package com.ymmihw.spring.cloud.stream.introduction.processor;
+package com.ymmihw.spring.cloud.stream.processor;
 
 import org.springframework.cloud.stream.annotation.Input;
 import org.springframework.cloud.stream.annotation.Output;
